@@ -1,0 +1,7 @@
+fastapi==0.108.0
+uvicorn== 0.25.0
+requests ==2.31.0
+multiport ==0.1
+python-multipart== 0.0.6
+nltk
+textblob
