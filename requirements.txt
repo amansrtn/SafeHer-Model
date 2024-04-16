@@ -5,7 +5,6 @@ multiport ==0.1
 python-multipart== 0.0.6
 nltk
 textblob
-scikit-learn == 1.4.2
+sklearn
 numpy
 pandas
-pickle == 4.0
