@@ -5,3 +5,7 @@ multiport ==0.1
 python-multipart== 0.0.6
 nltk
 textblob
+scikit-learn
+numpy
+pandas
+matplotlib
