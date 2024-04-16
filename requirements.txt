@@ -5,6 +5,6 @@ multiport ==0.1
 python-multipart== 0.0.6
 nltk
 textblob
-sklearn
+scikit-learn
 numpy
 pandas
