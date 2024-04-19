@@ -19,7 +19,7 @@ app = FastAPI()
 @app.post("/analyze")
 async def generate_quiz(request: Request):
     try:
-        modelrun()
+        
         text = await request.json()
         result_text = text["text"]
         c = Predict_Dark_Pattern_Type(result_text)
@@ -30,6 +30,7 @@ async def generate_quiz(request: Request):
 
 @app.get("/")
 async def api_info():
+    modelrun()
     return "CodeSage"
 
 
