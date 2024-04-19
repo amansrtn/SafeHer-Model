@@ -5,8 +5,10 @@ import string
 from textblob import TextBlob
 from nltk.corpus import stopwords
 from pathlib import Path
-
 from Model_Type_Dark_Pattern import modelrun
+import nltk
+nltk.download("stopwords")
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
