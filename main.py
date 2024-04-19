@@ -1,4 +1,4 @@
-from fastapi import FastAPI,Request
+from fastapi import FastAPI, Request
 import logging
 import pickle
 import string
@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 app = FastAPI()
 
 
-@app.post("/safety_checker")
+@app.post("/analyze")
 async def generate_quiz(request: Request):
     try:
         text = await request.json()

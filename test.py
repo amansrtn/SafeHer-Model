@@ -1,11 +1,10 @@
 import requests
-
+import pickle
 # Define the URL of your FastAPI endpoint
-url = "http://127.0.0.1:80/safety_checker"  # Replace with your actual URL
+url = "https://safeher-model.onrender.com/safety_checker"
 
 # Define the input text
 text = "help help"
-
 # Send a POST request with the input text
 response = requests.post(
     url, json={"text": text}, headers={"Content-Type": "application/json"}
