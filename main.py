@@ -17,6 +17,7 @@ app = FastAPI()
 @app.post("/analyze")
 async def generate_quiz(request: Request):
     try:
+        modelrun()
         text = await request.json()
         result_text = text["text"]
         c = Predict_Dark_Pattern_Type(result_text)
@@ -71,5 +72,5 @@ def Predict_Dark_Pattern_Type(new_text):
 
 if __name__ == "__main__":
     import uvicorn
-    modelrun()
+    
     uvicorn.run(app, host="127.0.0.1", port=80)
