@@ -6,8 +6,8 @@ from textblob import TextBlob
 from nltk.corpus import stopwords
 from pathlib import Path
 from Model_Type_Dark_Pattern import modelrun
-import nltk
-nltk.download("stopwords")
+# import nltk
+# nltk.download("stopwords")
 
 
 # Configure logging
@@ -52,10 +52,10 @@ def Predict_Dark_Pattern_Type(new_text):
     def remstop(text):
         newtext = []
         for w in text.split():
-            if w in stopwords.words("english"):
-                newtext.append("")
-            else:
-                newtext.append(w)
+            # if w in stopwords.words("english"):
+            #     newtext.append("")
+            # else:
+            newtext.append(w)
         x = newtext[:]
         newtext.clear()
         return " ".join(x)
