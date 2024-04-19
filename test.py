@@ -1,7 +1,7 @@
 import requests
 import pickle
 # Define the URL of your FastAPI endpoint
-url = "https://safeher-model.onrender.com/safety_checker"
+url = "http://127.0.0.1:80/analyze"
 
 # Define the input text
 text = "help help"

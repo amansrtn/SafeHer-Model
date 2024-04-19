@@ -6,6 +6,8 @@ from textblob import TextBlob
 from nltk.corpus import stopwords
 from pathlib import Path
 
+from Model_Type_Dark_Pattern import modelrun
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
@@ -69,5 +71,5 @@ def Predict_Dark_Pattern_Type(new_text):
 
 if __name__ == "__main__":
     import uvicorn
-
+    modelrun()
     uvicorn.run(app, host="127.0.0.1", port=80)
