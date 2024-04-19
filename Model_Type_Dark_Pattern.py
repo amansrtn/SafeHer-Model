@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import RandomForestClassifier
 import string
 from textblob import TextBlob
-from nltk.corpus import stopwords
+# from nltk.corpus import stopwords
 
 
 def modelrun():
@@ -26,10 +26,10 @@ def modelrun():
     def remstop(text):
         newtext = []
         for w in text.split():
-            if w in stopwords.words("english"):
-                newtext.append("")
-            else:
-                newtext.append(w)
+            # if w in stopwords.words("english"):
+            #     newtext.append("")
+            # else:
+            newtext.append(w)
         x = newtext[:]
         newtext.clear()
         return " ".join(x)
