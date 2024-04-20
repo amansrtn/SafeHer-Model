@@ -19,6 +19,7 @@ x=0
 @app.post("/analyze")
 async def generate_quiz(request: Request):
     try:
+        global x
         if x==0:
             modelrun() 
             x=1
