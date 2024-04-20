@@ -15,11 +15,13 @@ logging.basicConfig(level=logging.INFO)
 
 app = FastAPI()
 
-
+x=0
 @app.post("/analyze")
 async def generate_quiz(request: Request):
     try:
-        
+        if x==0:
+            modelrun() 
+            x=1
         text = await request.json()
         result_text = text["text"]
         c = Predict_Dark_Pattern_Type(result_text)
